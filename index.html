@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unblocked Game Hub</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="brand">
+          <span class="logo">🎮</span>
+          <span>Unblocked Game Hub</span>
+        </div>
+        <nav class="nav" aria-label="Main navigation">
+          <a href="#games">Games</a>
+          <a href="#about">About</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero">
+          <div class="hero-copy">
+            <p class="eyebrow">Quick fun, no install required</p>
+            <h1>Play free browser games anytime</h1>
+            <p>
+              A lightweight arcade website with instant-access mini-games built for stress-free fun.
+            </p>
+            <div class="hero-actions">
+              <a class="primary-btn" href="#games">Play Now</a>
+              <a class="secondary-btn" href="#about">Learn More</a>
+            </div>
+          </div>
+
+          <div class="hero-card" aria-label="Site stats">
+            <div class="mini-stat">
+              <span>4</span>
+              <small>Games</small>
+            </div>
+            <div class="mini-stat">
+              <span>∞</span>
+              <small>Fun</small>
+            </div>
+          </div>
+        </section>
+
+        <section id="games" class="games-section">
+          <div class="section-heading">
+            <p class="eyebrow">Game Selection</p>
+            <h2>Pick a game</h2>
+          </div>
+
+          <div class="game-grid">
+            <article class="game-card" data-game="snake" tabindex="0">
+              <div class="game-icon">🐍</div>
+              <h3>Snake</h3>
+              <p>Eat, grow, and avoid crashing into walls or yourself.</p>
+              <button type="button">Play Snake</button>
+            </article>
+
+            <article class="game-card" data-game="tictactoe" tabindex="0">
+              <div class="game-icon">❌⭕</div>
+              <h3>Tic-Tac-Toe</h3>
+              <p>Challenge the computer in a classic 3x3 battle.</p>
+              <button type="button">Play Tic-Tac-Toe</button>
+            </article>
+
+            <article class="game-card" data-game="memory" tabindex="0">
+              <div class="game-icon">🧠</div>
+              <h3>Memory Match</h3>
+              <p>Flip cards and test your recall skills.</p>
+              <button type="button">Play Memory Match</button>
+            </article>
+
+            <article class="game-card" data-game="pong" tabindex="0">
+              <div class="game-icon">🏓</div>
+              <h3>Pong</h3>
+              <p>Beat the AI in a fast one-pong showdown.</p>
+              <button type="button">Play Pong</button>
+            </article>
+          </div>
+        </section>
+
+        <section id="about" class="about-section">
+          <div class="section-heading">
+            <p class="eyebrow">About</p>
+            <h2>Built for instant play</h2>
+          </div>
+          <p>
+            This project is designed as a lightweight, browser-friendly game site with simple games that work without installs or complex setup.
+          </p>
+        </section>
+      </main>
+    </div>
+
+    <div id="gameModal" class="modal hidden" aria-hidden="true">
+      <div class="modal-content">
+        <button class="close-btn" id="closeModal" type="button" aria-label="Close game">×</button>
+        <div id="gameContainer"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
